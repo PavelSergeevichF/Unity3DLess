@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9F1E870B-A582-4889-A0BA-DE0CD573E849}</ProjectGuid>
+    <ProjectGuid>{878AE5B1-1123-A267-DD1E-E79EFB19E6A5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,33 +57,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\LibraryAssets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\LifeStats.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\SpawnObjectSaver.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Spotlight.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\RestartPlayerPrefs.cs" />
     <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\LibraryAssets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Mineable.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\PlantManager.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\LocationSaver.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Seed.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\ObjectManager.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\AIController.cs" />
     <Compile Include="Assets\LibraryAssets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\FireLightScript.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Lantern.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Generator.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Plant.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Eatable.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Spotlight.cs" />
+    <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\OilHolder.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\WaterDrinkable.cs" />
+    <Compile Include="Assets\LibraryAssets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\LibraryAssets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Plant.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\OilBarrel.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\ObjectUsage.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\LocationSaver.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\OilHolder.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\LifeStats.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\WaterDrinkable.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Mineable.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\ObjectManager.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\RestartPlayerPrefs.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\PlantManager.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\AIController.cs" />
     <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\HandInventory.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Seed.cs" />
-    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\SpawnObjectSaver.cs" />
+    <Compile Include="Assets\LibraryAssets\Mineshaft Survival\Scripts\Lantern.cs" />
+    <Compile Include="Assets\Script\IKAnimation.cs" />
+    <Compile Include="Assets\Script\Ragdoll.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
@@ -672,14 +674,17 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -687,61 +692,58 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{586516CF-6FDF-D1C2-55F3-342ED6384CF3}</Project>
+      <Project>{5557B2EC-53BF-6D8F-D0E0-93494B224E33}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
